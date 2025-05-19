@@ -1903,7 +1903,7 @@ static void InitializeApplication()
         else if(strcmp(physicalDeviceExtensionProperties[i].extensionName, VK_KHR_MAINTENANCE_5_EXTENSION_NAME) == 0)
             VK_KHR_maintenance5_enabled = true;
         else if (strcmp(physicalDeviceExtensionProperties[i].extensionName, VK_KHR_EXTERNAL_MEMORY_WIN32_EXTENSION_NAME) == 0)
-            VK_KHR_external_memory_win32_enabled = VMA_DYNAMIC_VULKAN_FUNCTIONS;
+            VK_KHR_external_memory_win32_enabled = true;
     }
 
     if(GetVulkanApiVersion() >= VK_API_VERSION_1_2)
